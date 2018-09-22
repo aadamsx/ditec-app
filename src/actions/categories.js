@@ -14,6 +14,8 @@ export const REQUEST_CATEGORY_ITEMS = "REQUEST_CATEGORY_ITEMS";
 export const RECEIVE_CATEGORY_ITEMS = "RECEIVE_CATEGORY_ITEMS";
 export const FAIL_CATEGORY_ITEMS = "FAIL_CATEGORY_ITEMS";
 export const UPDATE_CATEGORY_ITEM_PRICE = "UPDATE_CATEGORY_ITEM_PRICE";
+export const UPDATE_CATEGORY_ITEM_SIZE = "UPDATE_CATEGORY_ITEM_SIZE";
+export const UPDATE_CATEGORY_ITEM_QUANTITY = "UPDATE_CATEGORY_ITEM_QUANTITY";
 
 
 export const fetchCategoriesIfNeeded = () => async (dispatch, getState) => {
@@ -47,9 +49,7 @@ export const fetchCategoryItemsIfNeeded = (category) => async (dispatch, getStat
     console.log(error);
   }
 };
-
-const requestCategoryItems = (categoryId) => {
-  return {
+const requestCategoryItems = (categoryId) => { return {
     type: REQUEST_CATEGORY_ITEMS,
     categoryId
   };
@@ -70,6 +70,7 @@ export const updateItemPriceFromSize =  (size) => async (dispatch, getState) => 
     for ( const kvp of item.sizes ) {
       if ( kvp.size === size ) {
         await dispatch( setItemPrice(item.category, item.name, kvp.price));
+        await dispatch( setItemSize(item.category, item.name, kvp.size));
         break
       }
     }
@@ -83,6 +84,30 @@ const setItemPrice = (categoryId, itemId, price) => {
     itemId,
     price
   };
+};
+
+const setItemSize = (categoryId, itemId, size) => {
+  return {
+    type: UPDATE_CATEGORY_ITEM_SIZE,
+    categoryId,
+    itemId,
+    size
+  };
+};
+
+export const updateItemQuantity =  (qty) =>  (dispatch, getState) => {
+  console.log(`
+    at updateItemQuantity with qty --> ${qty}
+  `);
+  let item = currentItemSelector(getState());
+  if ( item ) {
+    dispatch({
+      type: UPDATE_CATEGORY_ITEM_QUANTITY,
+      categoryId: item.category,
+      itemId: item.name,
+      qty: parseInt(qty)
+    });
+  }
 };
 
 export const getUserDetailsRequest = id => ({

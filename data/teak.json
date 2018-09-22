@@ -10,6 +10,8 @@
 			{ "size": "quart", "price": 17500 }
 		],
     "price": 25000,
+    "qty": 0,
+    "size": "gal",
     "description": "DC-100 TEAK CLEAN is specially engineered for cleaning teak and other wood surfaces. It safely cleans and restores teak decks to their natural color. TEAK CLEAN combines superior cleaning performance with exceptional environmental properties.",
     "costPerformance": [
       "1 step application saves time",
@@ -55,6 +57,8 @@
 			{ "size": "5 liter", "price": 37500 }
 		],
     "price": 17000,
+    "qty": 0,
+    "size": "gal",
     "description": "TRITON is a nano-technology based coating designed for application on teak and other wood surfaces. Triton binds to the wood fiber and creates a protective and highly water repellent surface, and does not change the appearance, color or feeling of the surface.",
     "costPerformance": [
       "Triton offers exceptional performance and cost advantages",

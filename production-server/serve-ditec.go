@@ -126,6 +126,8 @@ func handleCategoryItems(w http.ResponseWriter, r *http.Request) {
 			Price int64  `json:"price"`
 		} `json:"sizes"`
 		Price                       int64    `json:"price"`
+		Size                        string   `json:"size"`
+		Qty                         int64    `json:"qty"`
 		Description                 string   `json:"description"`
 		CostPerformance             []string `json:"costPerformance"`
 		UseApplication              []string `json:"useApplication"`

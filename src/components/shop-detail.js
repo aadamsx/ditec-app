@@ -24,10 +24,10 @@ import { store } from '../store.js';
 import { connect } from 'pwa-helpers/connect-mixin.js';
 import { currentCategorySelector, currentItemSelector } from '../reducers/categories.js';
 import { addToCart } from '../actions/cart.js';
-import { updateItemPriceFromSize } from '../actions/categories.js';
+import { updateItemPriceFromSize, updateItemQuantity } from '../actions/categories.js';
 
 class ShopDetail extends connect(store)(PageViewElement) {
-  _render({ _failure, _item }) {
+  _render({ _failure, _item, _price }) {
     return html`
     ${shopButtonStyle}
     ${shopCommonStyle}
@@ -152,17 +152,17 @@ class ShopDetail extends connect(store)(PageViewElement) {
       <shop-image alt="${_item.title}" src="${_item.largeImage}"></shop-image>
       <div class="detail" has-content>
         <h1>${_item.title}</h1>
-        <div id="priceId" class="price">${this._item.price ? "$" + ( this._item.price / 100 ).toFixed(2) : null}</div>
+        <div id="priceId" class="price">${_price ? "$" + ( _price / 100 ).toFixed(2) : null}</div>
         <div class="pickers">
-          <paper-dropdown-menu label='Size' on-iron-select="${e => store.dispatch(updateItemPriceFromSize(e.detail.item.innerText))}">
+          <paper-dropdown-menu  label='Size' on-iron-select="${e => store.dispatch(updateItemPriceFromSize(e.detail.item.innerText))}">
             <paper-listbox slot="dropdown-content" selected="0">
               ${repeat(_item.sizes, kvp => html`
                 <paper-item>${kvp.size}</paper-item>
               `)}
           </paper-listbox>
         </paper-dropdown-menu>
-        <paper-dropdown-menu label="Quatity">
-          <paper-listbox slot="dropdown-content" selected="0">
+        <paper-dropdown-menu label="Quantity" on-iron-select="${ e => store.dispatch(updateItemQuantity(e.detail.item.innerText))}" >
+          <paper-listbox  slot="dropdown-content" selected="0">
             ${repeat([1,2,3,4,5], qty => html`
                 <paper-item>${qty}</paper-item>
               `)}
@@ -192,7 +192,9 @@ class ShopDetail extends connect(store)(PageViewElement) {
 
     _item: Object,
 
-    _failure: Boolean
+    _failure: Boolean,
+
+    _price: Number
 
 
   }}
@@ -201,6 +203,7 @@ class ShopDetail extends connect(store)(PageViewElement) {
     const category = currentCategorySelector(state);
     this._item = currentItemSelector(state) || {};
     this._failure = category && category.failure;
+    this._price = this._item.price
   }
 
   _unescapeText(text) {
@@ -212,31 +215,15 @@ class ShopDetail extends connect(store)(PageViewElement) {
   }
 
   _addToCart() {
-    const quantitySelect = this.shadowRoot.querySelector('#quantitySelect');
-    const sizeSelect = this.shadowRoot.querySelector('#sizeSelect');
     store.dispatch(addToCart({
       item: this._item,
-      quantity: parseInt(quantitySelect.value, 10),
-      size: sizeSelect.value
+      quantity: this._item.qty,
+      size: this._item.size
     }));
   }
 
   _isDefined(item) {
     return item != null;
-  }
-
-
-  _setPriceFromSize(e) {
-    updateItemPriceFromSize(e.detail.item.innerText);
-  }
-
-
-  _setPrice(price) {
-    const priceDiv = this.shadowRoot.querySelector('#priceId');
-    let p = price > 0 ? "$" + (price/100).toFixed(2) : "---";
-    if ( priceDiv ) {
-      priceDiv.textContent = p;
-    }
   }
 
 

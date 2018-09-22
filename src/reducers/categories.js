@@ -13,7 +13,9 @@ import {
     RECEIVE_CATEGORY_ITEMS,
     REQUEST_CATEGORY_ITEMS,
     FAIL_CATEGORY_ITEMS,
-    UPDATE_CATEGORY_ITEM_PRICE
+    UPDATE_CATEGORY_ITEM_PRICE,
+    UPDATE_CATEGORY_ITEM_SIZE,
+    UPDATE_CATEGORY_ITEM_QUANTITY
 } from '../actions/categories.js';
 import { createSelector } from 'reselect';
 
@@ -28,6 +30,8 @@ const categories = (state = {}, action) => {
       case RECEIVE_CATEGORY_ITEMS:
       case FAIL_CATEGORY_ITEMS:
       case UPDATE_CATEGORY_ITEM_PRICE:
+      case UPDATE_CATEGORY_ITEM_SIZE:
+      case UPDATE_CATEGORY_ITEM_QUANTITY:
         let categoryId = action.categoryId;
         return {
           ...state,
@@ -59,11 +63,19 @@ const category = (state = {}, action) => {
                 }
             };
       case UPDATE_CATEGORY_ITEM_PRICE:
+      case UPDATE_CATEGORY_ITEM_SIZE:
+      case UPDATE_CATEGORY_ITEM_QUANTITY:
         //state.items, action.ItemId, action.price
         let _items = state.items;
         let _items_  = Object.keys(_items).reduce( (obj, item) => {
         if ( item == action.itemId ) {
-          _items[item].price = action.price
+          if ( action.price ) {
+            _items[item].price = action.price;
+          } else if ( action.size ) {
+            _items[item].size = action.size;
+          } else if ( action.qty ) {
+            _items[item].qty = action.qty
+          }
         }
           obj[item] = _items[item];
           return obj
