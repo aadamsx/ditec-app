@@ -8,6 +8,7 @@
  * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
  */
 
+import { currentItemSelector } from '../reducers/categories.js';
 export const RECEIVE_CATEGORIES = "RECEIVE_CATEGORIES";
 export const REQUEST_CATEGORY_ITEMS = "REQUEST_CATEGORY_ITEMS";
 export const RECEIVE_CATEGORY_ITEMS = "RECEIVE_CATEGORY_ITEMS";
@@ -62,7 +63,20 @@ const receiveCategoryItems = (categoryId, items) => {
   };
 };
 
-export const updateCategoryItemPrice = (categoryId, itemId, price) => {
+
+export const updateItemPriceFromSize =  (size) => async (dispatch, getState) => {
+  let item = currentItemSelector(getState());
+  if ( item ) {
+    for ( const kvp of item.sizes ) {
+      if ( kvp.size === size ) {
+        await dispatch( setItemPrice(item.category, item.name, kvp.price));
+        break
+      }
+    }
+  }
+};
+
+const setItemPrice = (categoryId, itemId, price) => {
   return {
     type: UPDATE_CATEGORY_ITEM_PRICE,
     categoryId,
@@ -70,6 +84,11 @@ export const updateCategoryItemPrice = (categoryId, itemId, price) => {
     price
   };
 };
+
+export const getUserDetailsRequest = id => ({
+  type: Actions.GET_USER_DETAILS_REQUEST,
+  payload: id,
+});
 
 const failCategoryItems = (categoryId) => {
   return {

@@ -12,6 +12,9 @@ import { PageViewElement } from './page-view-element.js';
 import { html } from '@polymer/lit-element';
 import { repeat } from 'lit-html/lib/repeat.js';
 import { unsafeHTML } from 'lit-html/lib/unsafe-html.js';
+import '@polymer/paper-dropdown-menu/paper-dropdown-menu.js';
+import '@polymer/paper-item/paper-item.js';
+import '@polymer/paper-listbox/paper-listbox.js';
 import { shopButtonStyle } from './shop-button-style.js';
 import { shopCommonStyle } from './shop-common-style.js';
 import { shopSelectStyle } from './shop-select-style.js';
@@ -19,10 +22,9 @@ import './shop-image.js';
 
 import { store } from '../store.js';
 import { connect } from 'pwa-helpers/connect-mixin.js';
-import { currentCategorySelector, currentItemSelector, currentItemSizesSelector } from '../reducers/categories.js';
+import { currentCategorySelector, currentItemSelector } from '../reducers/categories.js';
 import { addToCart } from '../actions/cart.js';
-import { updateCategoryItemPrice } from '../actions/categories.js';
-import { updateOptionsState } from '../actions/app.js';
+import { updateItemPriceFromSize } from '../actions/categories.js';
 
 class ShopDetail extends connect(store)(PageViewElement) {
   _render({ _failure, _item }) {
@@ -152,33 +154,20 @@ class ShopDetail extends connect(store)(PageViewElement) {
         <h1>${_item.title}</h1>
         <div id="priceId" class="price">${this._item.price ? "$" + ( this._item.price / 100 ).toFixed(2) : null}</div>
         <div class="pickers">
-          <shop-select>
-            <label id="sizeLabel" prefix>Size</label>
-            <select id="sizeSelect" aria-labelledby="sizeLabel" on-change="${() => this._updatePrice()}">
-              ${repeat(_item.sizes, s => {
-                  return html`
-                    <option value="${s.size}">${s.size}</option>
-                  `;
-                })
-              }
-            </select>
-            <shop-md-decorator aria-hidden="true">
-              <shop-underline></shop-underline>
-            </shop-md-decorator>
-          </shop-select>
-          <shop-select>
-            <label id="quantityLabel" prefix>Quantity</label>
-            <select id="quantitySelect" aria-labelledby="quantityLabel">
-              <option value="1" selected>1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5</option>
-            </select>
-            <shop-md-decorator aria-hidden="true">
-              <shop-underline></shop-underline>
-            </shop-md-decorator>
-          </shop-select>
+          <paper-dropdown-menu label='Size' on-iron-select="${e => store.dispatch(updateItemPriceFromSize(e.detail.item.innerText))}">
+            <paper-listbox slot="dropdown-content" selected="0">
+              ${repeat(_item.sizes, kvp => html`
+                <paper-item>${kvp.size}</paper-item>
+              `)}
+          </paper-listbox>
+        </paper-dropdown-menu>
+        <paper-dropdown-menu label="Quatity">
+          <paper-listbox slot="dropdown-content" selected="0">
+            ${repeat([1,2,3,4,5], qty => html`
+                <paper-item>${qty}</paper-item>
+              `)}
+        </paper-listbox>
+      </paper-dropdown-menu>
         </div>
         <div class="description">
           <h2>Description</h2>
@@ -212,8 +201,6 @@ class ShopDetail extends connect(store)(PageViewElement) {
     const category = currentCategorySelector(state);
     this._item = currentItemSelector(state) || {};
     this._failure = category && category.failure;
-    console.log(`at _stateChanged with _item.sizes = ${JSON.stringify(this._item.sizes)}`);
-    console.log(`at _stateChanged with _item.size = ${this._item.price}`);
   }
 
   _unescapeText(text) {
@@ -239,22 +226,10 @@ class ShopDetail extends connect(store)(PageViewElement) {
   }
 
 
-  _updatePrice() {
-    const sizeSelect = this.shadowRoot.querySelector('#sizeSelect');
-    if ( sizeSelect ) {
-      let _price
-      let _size = sizeSelect.value
-      for ( const el of this._item.sizes ) {
-        if ( el.size === _size ) {
-          _price = el.price
-          store.dispatch(updateCategoryItemPrice(this._item.category, this._item.name, _price))
-          break;
-        }
-      }
-      this._setPrice(_price)
-      updateOptionsState(true);
-    }
+  _setPriceFromSize(e) {
+    updateItemPriceFromSize(e.detail.item.innerText);
   }
+
 
   _setPrice(price) {
     const priceDiv = this.shadowRoot.querySelector('#priceId');

@@ -105,7 +105,3 @@ export const currentItemSelector = createSelector(
   (category, itemName) => (category && category.items  && itemName ? category.items[itemName] : null)
 );
 
-export const currentItemSizesSelector = createSelector(
-  currentItemSelector,
-  (item) => (item ? item.sizes : [])
-);

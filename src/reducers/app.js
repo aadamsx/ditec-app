@@ -17,8 +17,7 @@ import {
   UPDATE_NETWORK_STATUS,
   OPEN_SNACKBAR,
   CLOSE_SNACKBAR,
-  UPDATE_DRAWER_STATE,
-  UPDATE_OPTIONS_STATE
+  UPDATE_DRAWER_STATE
 } from '../actions/app.js';
 
 import { ADD_TO_CART } from '../actions/cart.js';
@@ -63,11 +62,6 @@ const app = (state = {drawerOpened: false, optionsChanged: false}, action) => {
       return {
         ...state,
         drawerOpened: action.opened
-      }
-    case UPDATE_OPTIONS_STATE:
-      return {
-        ...state,
-        optionsChanged: action.changed
       }
     case UPDATE_NETWORK_STATUS:
       return {
