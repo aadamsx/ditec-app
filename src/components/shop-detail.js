@@ -15,6 +15,8 @@ import { unsafeHTML } from 'lit-html/lib/unsafe-html.js';
 import '@polymer/paper-dropdown-menu/paper-dropdown-menu.js';
 import '@polymer/paper-item/paper-item.js';
 import '@polymer/paper-listbox/paper-listbox.js';
+import '@polymer/paper-tabs/paper-tabs.js';
+import '@polymer/paper-tabs/paper-tab.js';
 import { shopButtonStyle } from './shop-button-style.js';
 import { shopCommonStyle } from './shop-common-style.js';
 import { shopSelectStyle } from './shop-select-style.js';
@@ -25,9 +27,10 @@ import { connect } from 'pwa-helpers/connect-mixin.js';
 import { currentCategorySelector, currentItemSelector } from '../reducers/categories.js';
 import { addToCart } from '../actions/cart.js';
 import { updateItemPriceFromSize, updateItemQuantity } from '../actions/categories.js';
+import { updateAttributeForSelected } from '../actions/app.js';
 
 class ShopDetail extends connect(store)(PageViewElement) {
-  _render({ _failure, _item, _price }) {
+  _render({ _failure, _item, _price, _attributeForSelected  }) {
     return html`
     ${shopButtonStyle}
     ${shopCommonStyle}
@@ -60,7 +63,7 @@ class ShopDetail extends connect(store)(PageViewElement) {
       .detail {
         margin: 64px 32px;
         width: 50%;
-        max-width: 400px;
+        max-width: 600px;
         transition: opacity 0.4s;
         opacity: 0;
       }
@@ -107,6 +110,16 @@ class ShopDetail extends connect(store)(PageViewElement) {
       .pickers > shop-select > select {
         font-size: 16px;
         padding: 16px 24px 16px 70px;
+      }
+
+      paper-tabs {
+        margin-top: 3em;
+        background-color: #eeeeee;
+        --paper-tabs-selection-bar-color: #d32f2f;
+      }
+
+      paper-tab {
+        --paper-tab-ink: #d32f2f;
       }
 
       @media (max-width: 1039px) {
@@ -176,6 +189,27 @@ class ShopDetail extends connect(store)(PageViewElement) {
         <shop-button responsive>
           <button on-click="${() => this._addToCart()}" aria-label="Add this item to cart">Add to Cart</button>
         </shop-button>
+        <paper-tabs attr-for-selected="name" selected="costPerformance" scrollable on-iron-select="${ e => store.dispatch(updateAttributeForSelected(e.detail.item.getAttribute('name')))}">
+          <paper-tab name="costPerformance">Cost&#x2F;Performance</paper-tab>
+          <paper-tab name="packagingHandling">Packaging and Handling</paper-tab>
+          <paper-tab>Use&#x2F;Application</paper-tab>
+          <paper-tab>Suggested Dilution Directions</paper-tab>
+          <paper-tab>Environment</paper-tab>
+          <paper-tab>Product Specifications</paper-tab>
+        </paper-tabs>
+        <iron-pages attr-for-selected="name" selected="packagingHandling">
+          <div name="costPerformance">
+            <ul>
+              ${repeat(_item.costPerformance, item => html`
+                <li>${item}</li>
+              `)}
+            </ul>
+          </div>
+          <div name="packagingHandling">
+            ${_item.packagingHandling}
+          </div>
+            
+        </iron-pages>
       </div>
     </div>
 
@@ -194,16 +228,21 @@ class ShopDetail extends connect(store)(PageViewElement) {
 
     _failure: Boolean,
 
-    _price: Number
+    _price: Number,
+
+    _attributeForSelected: String
+
 
 
   }}
+
 
   _stateChanged(state) {
     const category = currentCategorySelector(state);
     this._item = currentItemSelector(state) || {};
     this._failure = category && category.failure;
-    this._price = this._item.price
+    this._price = this._item.price;
+    this._attributeForSelected = state.app.attributeForSelected;
   }
 
   _unescapeText(text) {
@@ -214,6 +253,10 @@ class ShopDetail extends connect(store)(PageViewElement) {
     return elem.textContent;
   }
 
+  _setSelected() {
+    console.log(`at _setSelected with this._attributeForSelected --> ${this._attributeForSelected}`);
+    return this._attributeForSelected;
+  }
   _addToCart() {
     store.dispatch(addToCart({
       item: this._item,

@@ -96,9 +96,6 @@ const setItemSize = (categoryId, itemId, size) => {
 };
 
 export const updateItemQuantity =  (qty) =>  (dispatch, getState) => {
-  console.log(`
-    at updateItemQuantity with qty --> ${qty}
-  `);
   let item = currentItemSelector(getState());
   if ( item ) {
     dispatch({

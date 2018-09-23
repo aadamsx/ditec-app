@@ -17,14 +17,15 @@ import {
   UPDATE_NETWORK_STATUS,
   OPEN_SNACKBAR,
   CLOSE_SNACKBAR,
-  UPDATE_DRAWER_STATE
+  UPDATE_DRAWER_STATE,
+  UPDATE_ATTRIBUTE_FOR_SELECTED
 } from '../actions/app.js';
 
 import { ADD_TO_CART } from '../actions/cart.js';
 import { currentCategorySelector, currentItemSelector } from './categories.js';
 import { createSelector } from 'reselect';
 
-const app = (state = {drawerOpened: false, optionsChanged: false}, action) => {
+const app = (state = {drawerOpened: false, optionsChanged: false, attributeForSelected: "costPerformance"}, action) => {
   switch (action.type) {
     case UPDATE_LOCATION:
       return {
@@ -62,6 +63,11 @@ const app = (state = {drawerOpened: false, optionsChanged: false}, action) => {
       return {
         ...state,
         drawerOpened: action.opened
+      }
+    case UPDATE_ATTRIBUTE_FOR_SELECTED:
+      return {
+        ...state,
+        attributeForSelected: action.attributeForSelected
       }
     case UPDATE_NETWORK_STATUS:
       return {

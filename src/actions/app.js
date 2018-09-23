@@ -20,7 +20,7 @@ export const UPDATE_NETWORK_STATUS = 'UPDATE_NETWORK_STATUS';
 export const UPDATE_DRAWER_STATE = 'UPDATE_DRAWER_STATE';
 export const OPEN_SNACKBAR = 'OPEN_SNACKBAR';
 export const CLOSE_SNACKBAR = 'CLOSE_SNACKBAR';
-export const UPDATE_OPTIONS_STATE = 'UPDATE_OPTIONS_STATE';
+export const UPDATE_ATTRIBUTE_FOR_SELECTED = 'UPDATE_ATTRIBUTE_FOR_SELECTED';
 
 export const reloadCategory = () => async (dispatch, getState) => {
   let state = getState();
@@ -172,14 +172,13 @@ export const updateDrawerState = (opened) => (dispatch, getState) => {
   }
 }
 
-export const updateOptionsState = (changed) => (dispatch, getState) => {
-  if (getState().app.optionsChanged !== changed) {
-    dispatch({
-      type: UPDATE_OPTIONS_STATE,
-      changed
-    });
-  }
+export const updateAttributeForSelected = (attr) => (dispatch) => {
+  dispatch({
+    type: UPDATE_ATTRIBUTE_FOR_SELECTED,
+    attributeForSelected: attr
+  });
 }
+
 
 let snackbarTimer = 0;
 
