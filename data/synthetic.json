@@ -1,34 +1,35 @@
 [
   {
-    "name": "Teak+Clean",
-    "title": "Teak Clean",
-    "category": "teak",
-		"image": "images/products/teakcleanB.png",
-		"largeImage": "images/products/teakcleanA.png",
+    "name": "Surface+Clean",
+    "title": "DC-100 Surface Clean",
+    "category": "synthetic",
+		"image": "images/products/surfacecleanB.png",
+		"largeImage": "images/products/surfacecleanA.png",
 		"sizes": [
 			{ "size": "gal", "price": 25000 },
-			{ "size": "liter", "price": 17500 }
+			{ "size": "quart", "price": 7500 }
 		],
     "price": 25000,
-    "description": "DC-100 TEAK CLEAN is specially engineered for cleaning teak and other wood surfaces. It safely cleans and restores teak decks to their natural color. TEAK CLEAN combines superior cleaning performance with exceptional environmental properties.",
+    "description": "DC-100 SURFACE CLEANj raesent in mauris eu tortor porttitor accumsan. Mauris suscipit, ligula sit amet pharetra semper, nibh ante cursus purus, vel sagittis velit mauris vel metus. Aenean fermentum risus id tortor. Integer imperdiet lectus quis justo. Integer tempor. Vivamus ac urna vel leo pretium faucibus. Mauris elementum mauris vitae tortor. In dapibus augue non sapien. Aliquam ante. Curabitur bibendum justo non orci .",
     "costPerformance": [
-      "1 step application saves time",
-      "TEAK CLEAN offers exceptional performance and cost efficiency",
-      "3 times more effective than phosphoric acid",
-      "4 to10 times more effective than citric and glycolic acid",
-      "Safe for gelcoat and painted surfaces",
-      "Not DOT regulated; offers lower transportation cost",
-      "Ideal to be used in concentrate or diluted",
-      "Contains anti-corrosion inhibitors for use around metal surfaces"
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar",
+      "Lorctetuer adipiscing elit. Nullam feugiat, turpis at pulvinar",
+      "lor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar",
+      " ipsum dolor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar",
+      "Loremolor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar",
+      "Lorem jhit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar",
+      "jhit amet, consecting elit. Nullam feugiat, turpis at pulvinar",
+      "kmet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar",
+      "sum dolor sit amet, consectetuer adipiscing elit. Nullam feugiat, turpis at pulvinar"
     ],
-		"packagingHandling": "DC-100 TEAK CLEAN is available in 5 liter, 10 liter, and 25 liter HDPE containers. DC-100 TEAK CLEAN should be stored in high density polyethylene or fiberglass containers.",
+		"packagingHandling": "DC-100 SURFACE CLEAN is available in 5 liter, 10 liter, and 25 liter HDPE containers. DC-100 TEAK CLEAN should be stored in high density polyethylene or fiberglass containers.",
 		"useApplication": [
 			"Teak Deaks",
 			"Teak Furniture",
 			"Wood Furniture",
 			"All Wood Surfaces"
 		],
-		"suggestedDilutionDirections": "DC-100 TEAK CLEANER can be used in concentrated or diluted form, depending on the need for maintenance and cleaning. Dilute with clean water 1:1 to 5:1 or as needed (128 to 20 ounces per gallon of water).  For best results, Apply DC-100 TEAK CLEAN on the surface to be cleaned. Allow it to affect the surface for 30 seconds to 5 minutes. Brush the surface in the same direction as the teak grain. Rinse with clean water. After cleaning, preserve the surface with Bio Clear 2000 and Triton Sealer.",
+		"suggestedDilutionDirections": "DC-100 SURFACE CLEAN can be used in concentrated or diluted form, depending on the need for maintenance and cleaning. Dilute with clean water 1:1 to 5:1 or as needed (128 to 20 ounces per gallon of water).  For best results, Apply DC-100 TEAK CLEAN on the surface to be cleaned. Allow it to affect the surface for 30 seconds to 5 minutes. Brush the surface in the same direction as the teak grain. Rinse with clean water. After cleaning, preserve the surface with Bio Clear 2000 and Triton Sealer.",
 		"environment": [
 			"MARPOL Annex V Compliant",
 			"NPDES Compliant",
@@ -36,91 +37,6 @@
 			"Readily Biodegradable",
 			"No VOC's",
 			"Non-fuming",
-			"Non-corrosive to skin",
-			"Non-corrosive to mild steel"
-		],
-		"productSpecification": "Appearance : Clear amber liquid,  Solubility : 100% in water  PH : (as is) 0.18 Activity : 60% (typical)"
-
-  },
-  {
-    "name": "Triton",
-    "title": "Triton",
-    "category": "teak",
-		"image": "images/products/tritonB.png",
-		"largeImage": "images/products/tritonA.png",
-		"sizes": [
-			{ "size": "gal", "price": 17000 },
-			{ "size": "liter", "price": 7500 }
-		],
-    "price": 17000,
-    "description": "TRITON is a nano-technology based coating designed for application on teak and other wood surfaces. Triton binds to the wood fiber and creates a protective and highly water repellent surface, and does not change the appearance, color or feeling of the surface.",
-    "costPerformance": [
-      "Triton offers exceptional performance and cost advantages",
-      "The most effective teak treatment available",
-      "Contains superior technology for the marine environment",
-      "1 step application",
-      "Significantly reduces wood surface maintenance"
-    ],
-		"packagingHandling": "TRITON is available in 5 liter, 10 liter, and 25 liter HDPE containers.  TRITON should be stored in high density polyethylene or fiberglass containers.",
-		"useApplication": [
-			"Teak",
-			"Other Wood Surfaces"
-		],
-		"suggestedDilutionDirections": "TRITON is provided ready to use and does not require dilution.\\nFor best results, clean and wash the surface with DC-100 Teak Clean and disinfect the surface with BIO CLEAR 2000.  Apply TRITON on the surface using a soft brush or sponge. Allow TRITON to cure for 10 hours.\\n  Avoid use on aluminum and stainless steel. If spilled or applied to these materials, rinse the surface with water and clean the surface with ELITE APC.",
-		"environment": [
-			"MARPOL Annex III Compliant",
-			"NPDES Compliant",
-			"Excellent aquatic toxicity profile",
-			"Readily Biodegradable",
-			"No VOC's",
-			"Non-fuming",
-			"Non-corrosive to skin",
-			"Non-corrosive to mild steel"
-		],
-		"productSpecification": "Appearance : Clear liquid"
-
-  },
-  {
-    "name": "Bio+Clear+2000",
-    "title": "Bio Clear 2000",
-    "category": "teak",
-		"image": "images/products/bioclear2000B.png",
-		"largeImage": "images/products/bioclear2000A.png",
-		"sizes": [
-			{ "size": "gal", "price": 32000 },
-			{ "size": "liter", "price": 17500 }
-		],
-    "price": 32000,
-    "description": "BIO CLEAR 2000 is an Advanced EPA Registered Detergent/Disinfectant designed to provide effective cleaning, sanitation, disinfection and mold prevention.",
-    "costPerformance": [
-      "Exceptional performance",
-      "Low usage and cost effective",
-      "Not DOT regulated; offers lower transportation cost",
-      "Removes mold and mildew",
-      "Can be used for food sanitation",
-      "Can be used as cleaner, sanitizer, disinfectant, odor remover"
-    ],
-		"packagingHandling": "BIO CLEAR 2000 is available in 1 US Gallon HDPE containers. BIO CLEAR 2000 should be stored in high density polyethylene or fiberglass containers.",
-		"useApplication": [
-			"Ceramic",
-			"Glass",
-			"Plastic, Rubber, Silicon",
-			"Fiberglass",
-			"Polymer surfaces",
-			"Wood",
-			"Metal"
-		],
-		"suggestedDilutionDirections": "Disinfecting hard, non-porous surfaces: add 1 ounce per gallon of water. Apply solution with a mop, cloth, sponge, hand pump trigger sprayer or low pressure coarse sprayer so as to wet all surfaces thoroughly. Allow to remain wet for 10 minutes then remove excess liquid.\\nRead product label for complete description",
-		"environment": [
-			"Excellent aquatic toxicity profile",
-			"Readily Biodegradable",
-			"Phosphate Free",
-			"Does not contain phenols",
-			"Bleach Free",
-			"Non-corrosive",
-			"Non-corrosive to mild steel"
-		],
-		"productSpecification": "Appearance : Clear liquid\\t  Solubility : 100% in water\\t  PH : (as is) 9"
-
+			"Non-corrosive to skin", "Non-corrosive to mild steel" ], "productSpecification": "Appearance : Clear amber liquid,  Solubility : 100% in water  PH : (as is) 0.18 Activity : 60% (typical)" 
   }
 ]

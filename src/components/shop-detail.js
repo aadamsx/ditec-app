@@ -47,6 +47,11 @@ class ShopDetail extends connect(store)(PageViewElement) {
         justify-content: center;
       }
 
+      #content p {
+        white-space: pre-line;
+        text-align: justify;
+      }
+
       shop-image {
         position: relative;
         margin: 64px 32px;
@@ -192,10 +197,10 @@ class ShopDetail extends connect(store)(PageViewElement) {
         <paper-tabs attr-for-selected="name" selected="costPerformance" scrollable on-iron-select="${ e => store.dispatch(updateAttributeForSelected(e.detail.item.getAttribute('name')))}">
           <paper-tab name="costPerformance">Cost&#x2F;Performance</paper-tab>
           <paper-tab name="packagingHandling">Packaging and Handling</paper-tab>
-          <paper-tab>Use&#x2F;Application</paper-tab>
-          <paper-tab>Suggested Dilution Directions</paper-tab>
-          <paper-tab>Environment</paper-tab>
-          <paper-tab>Product Specifications</paper-tab>
+          <paper-tab name="useApplication" >Use&#x2F;Application</paper-tab>
+          <paper-tab name="suggestedDilutionDirections" >Suggested Dilution Directions</paper-tab>
+          <paper-tab name="environment" >Environment</paper-tab>
+          <paper-tab name="productSpecification" >Product Specifications</paper-tab>
         </paper-tabs>
           <div hidden="${_attributeForSelected !== 'costPerformance'}">
             <ul>
@@ -206,7 +211,31 @@ class ShopDetail extends connect(store)(PageViewElement) {
           </div>
           <div hidden="${_attributeForSelected !== 'packagingHandling'}">
             <p>
-              ${_item.packagingHandling}
+              ${this._scrub(_item.packagingHandling)}
+            </p>
+          </div>
+          <div hidden="${_attributeForSelected !== 'useApplication'}">
+            <ul>
+              ${repeat(_item.useApplication, item => html`
+                <li>${item}</li>
+              `)}
+            </ul>
+          </div>
+          <div hidden="${_attributeForSelected !== 'suggestedDilutionDirections'}">
+            <p>
+              ${this._scrub(_item.suggestedDilutionDirections)}
+            </p>
+          </div>
+          <div hidden="${_attributeForSelected !== 'environment'}">
+            <ul>
+              ${repeat(_item.environment, item => html`
+                <li>${item}</li>
+              `)}
+            </ul>
+          </div>
+          <div hidden="${_attributeForSelected !== 'productSpecification'}">
+            <p>
+              ${this._scrub(_item.productSpecification)}
             </p>
           </div>
             
@@ -243,9 +272,6 @@ class ShopDetail extends connect(store)(PageViewElement) {
     this._failure = category && category.failure;
     this._price = this._item.price;
     this._attributeForSelected = state.app.attributeForSelected;
-    console.log(`
-      at _stateChanged(state) with _attributeForSelected = ${this._attributeForSelected}
-    `);
   }
 
   _unescapeText(text) {
@@ -256,14 +282,6 @@ class ShopDetail extends connect(store)(PageViewElement) {
     return elem.textContent;
   }
 
-  _noHide(attrValue) {
-    /*
-    if (this._attributeForSelected) {
-      return ( (this._attributeForSelected === attrValue ) ? "" : "hidden" );
-    }
-    */
-    return html``;
-  }
   _addToCart() {
     store.dispatch(addToCart({
       item: this._item,
@@ -275,7 +293,15 @@ class ShopDetail extends connect(store)(PageViewElement) {
   _isDefined(item) {
     return item != null;
   }
+  
+  _scrub(text) {
+    if ( text != null && text != "") {
+      return text.replace(/\\n/g, '\n');
+    }
+    return text;
+  }
 
+    
 
 }
 

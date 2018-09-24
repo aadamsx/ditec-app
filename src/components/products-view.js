@@ -106,7 +106,6 @@ class ProductsView extends connect(store)(PageViewElement) {
             return html`<div class="item">
               <a class="image-link" href="/list/${category.name}">
 
-                <h4>${category.title}</h4>
 
                 <shop-image
                   alt="${category.title}"
@@ -114,6 +113,7 @@ class ProductsView extends connect(store)(PageViewElement) {
                   placeholder="${category.placeholder}">
                 </shop-image>
                 
+                <h4>${category.title}</h4>
 
               </a>
             </div>`;

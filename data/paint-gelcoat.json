@@ -1,126 +1,135 @@
 [
   {
-    "name": "Teak+Clean",
-    "title": "Teak Clean",
-    "category": "teak",
-		"image": "images/products/teakcleanB.jpg",
-		"largeImage": "images/products/teakcleanA.jpg",
+    "name": "ELITE+APC+(All+Purpose+Cleaner)",
+    "title": "ELITE APC (All Purpose Cleaner)",
+    "category": "paint-gelcoat",
+		"image": "images/products/apcB.png",
+		"largeImage": "images/products/apcA.png",
 		"sizes": [
-			{ "size": "gal", "price": 25000 },
-			{ "size": "liter", "price": 17500 }
+			{ "size": "gal", "price": 15000 },
+			{ "size": "quart", "price": 7500 }
 		],
-    "price": 25000,
-    "description": "DC-100 TEAK CLEAN is specially engineered for cleaning teak and other wood surfaces. It safely cleans and restores teak decks to their natural color. TEAK CLEAN combines superior cleaning performance with exceptional environmental properties.",
+    "price": 15000,
+    "description": "ELITE APC is one of the most versatile and effective all-purpose cleaners available. It's non-toxic and biodegradable, without harmful bleach. The super concentrated formula empowers APC to clean just about anything.",
     "costPerformance": [
-      "1 step application saves time",
-      "TEAK CLEAN offers exceptional performance and cost efficiency",
-      "3 times more effective than phosphoric acid",
-      "4 to10 times more effective than citric and glycolic acid",
-      "Safe for gelcoat and painted surfaces",
-      "Not DOT regulated; offers lower transportation cost",
-      "Ideal to be used in concentrate or diluted",
-      "Contains anti-corrosion inhibitors for use around metal surfaces"
+      "Concentrate formula offers high dilution ratio",
+      "Contains anti-corrosion inhibitors for application on metal",
+      "Contains mold prevention inhibitors",
+      "Replaces most other cleaners and detergents",
+      "Removes discoloring substances and has whitening properties<Paste>",
+      "Ability to clean areas where agitation is restricted",
+      "Superior penetration and removal of dirt",
+      "Low streak/smear profile",
+      "Excellent rinsing properties"
     ],
-		"packagingHandling": "DC-100 TEAK CLEAN is available in 5 liter, 10 liter, and 25 liter HDPE containers. DC-100 TEAK CLEAN should be stored in high density polyethylene or fiberglass containers.",
+		"packagingHandling": "ELITE APC is available in 5 liter, 10 liter, and 25 liter HDPE containers.  ELITE APC should be Gstored in high density polyethylene or fiberglass containers.",
 		"useApplication": [
-			"Teak Deaks",
-			"Teak Furniture",
-			"Wood Furniture",
-			"All Wood Surfaces"
+			"Stainless steel and metal",
+			"Ceramic, Marble, Stone, Tile",
+			"Glass, Fiberglass",
+			"Gelcoat and painted surfaces",
+			"Plastic, Rubber, Vinyl",
+			"Fabric, Carpet"
 		],
-		"suggestedDilutionDirections": "DC-100 TEAK CLEANER can be used in concentrated or diluted form, depending on the need for maintenance and cleaning. Dilute with clean water 1:1 to 5:1 or as needed (128 to 20 ounces per gallon of water).  For best results, Apply DC-100 TEAK CLEAN on the surface to be cleaned. Allow it to affect the surface for 30 seconds to 5 minutes. Brush the surface in the same direction as the teak grain. Rinse with clean water. After cleaning, preserve the surface with Bio Clear 2000 and Triton Sealer.",
+		"suggestedDilutionDirections": "ELITE APC is concentrated and should be used in diluted format.\n    Dilute ELITE APC with clean water in 25-1 to 2-1 (10-25 ounces per gallon of water), depending on condition of surface. Use more ELITE APC for extremely dirty surfaces.\n    Apply ELITE APC on the surface to be cleaned. Allow it to effect 30 seconds to 5 minutes. Rinse with clean water.",
+		"environment": [
+			"MARPOL Compliant",
+			"NPDES Compliant",
+			"Excellent aquatic toxicity profile",
+			"Readily Biodegradable",
+			"No VOC",
+			"Phosphate and Nitrate Free",
+			"Does Not contain Bleach",
+			"Glycol Ether, Ammonia"
+		],
+		"productSpecification": "Appearance : Clear amber liquid,  Solubility : 100% in water  PH : (as is) 11"
+
+  },
+  {
+    "name": "ELITE+NON-SKID+CLEAN",
+    "title": "ELITE NON-SKID CLEAN",
+    "category": "paint-gelcoat",
+		"image": "images/products/blackstreakB.png",
+		"largeImage": "images/products/blackstreakA.png",
+		"sizes": [
+			{ "size": "gal", "price": 18000 },
+			{ "size": "32oz spray bottle", "price": 5500 }
+		],
+    "price": 18000,
+    "description": "ELITE NON-SKID CLEAN is specially formulated to remove stains, dirt and other foreign matter from all non-skid surfaces, painted or gelcoat.",
+    "costPerformance": [
+      "Advanced surfactant engineering provides exceptional cleaning",
+      "Contains no thickener offering superior solubility",
+      "Suitable for high temperature applications",
+      "Fast penetration and removal of oily/greasy particulate soils",
+      "Excellent rinsing properties",
+      "Stable when in contact with Acids, Alkali and Hydrogen Peroxide",
+      "Concentrate formula"
+    ],
+		"packagingHandling": "ELITE NON-SKID CLEAN is available in 5 liter, 10 liter, and 25 liter HDPE containers.  ELITE NON-SKID CLEAN should be stored in high density polyethylene or fiberglass containers.",
+		"useApplication": [
+			"Paint",
+			"Gelcoat",
+			"Fiberglass"
+		],
+		"suggestedDilutionDirections": "ELITE NON-SKID CLEAN should be used in diluted form depending on the need for maintenance and cleaning. Dilute with clean water 5:1 to 20:1 or as needed. (5 to 8 ounces per gallon of water)\n    \n    Apply ELITE NON-SKID CLEAN to the surface to be cleaned. Allow it to affect 10 seconds to 5 minutes depending on surface condition. Brush the surface. Rinse with clean water.",
 		"environment": [
 			"MARPOL Annex V Compliant",
 			"NPDES Compliant",
 			"Excellent aquatic toxicity profile",
 			"Readily Biodegradable",
 			"No VOC's",
-			"Non-fuming",
-			"Non-corrosive to skin",
-			"Non-corrosive to mild steel"
+			"Phosphate and Nitrate Free",
+			"Contains no Propylene Glycol",
+			"Does not contain Formaldehyde"
 		],
-		"productSpecification": "Appearance : Clear amber liquid,  Solubility : 100% in water  PH : (as is) 0.18 Activity : 60% (typical)"
+		"productSpecification": "Appearance : Clear amber liquid   Solubility : 100% in water    PH : (as is) 1"
 
   },
   {
-    "name": "Triton",
-    "title": "Triton",
-    "category": "teak",
-		"image": "images/products/tritonB.png",
-		"largeImage": "images/products/tritonA.png",
+    "name": "ELITE+BOAT+SOAP",
+    "title": "ELITE BOAT SOAP",
+    "category": "paint-gelcoat",
+		"image": "images/products/boatsoapB.png",
+		"largeImage": "images/products/boatsoapA.png",
 		"sizes": [
-			{ "size": "gal", "price": 17000 },
-			{ "size": "liter", "price": 7500 }
+			{ "size": "gal", "price": 12000 },
+			{ "size": "quart", "price": 7500 }
 		],
-    "price": 25000,
-    "description": "TRITON is a nano-technology based coating designed for application on teak and other wood surfaces. Triton binds to the wood fiber and creates a protective and highly water repellent surface, and does not change the appearance, color or feeling of the surface.",
+    "price": 12000,
+    "description": "ELITE BOAT SOAP is ideal for removing grease, grime and tough dirt. It's advanced formula lifts trapped dirt molecules, leaving behind an incomparably clean surface. ELITE BOAT SOAP is formulated using the latest and safest technologies.",
     "costPerformance": [
-      "Triton offers exceptional performance and cost advantages",
-      "The most effective teak treatment available",
-      "Contains superior technology for the marine environment",
-      "1 step application",
-      "Significantly reduces wood surface maintenance"
+      "Advanced surfactant engineering provides exceptional cleaning",
+      "Contains no thickener offering superior solubility",
+      "Suitable for high temperature applications",
+      "Penetration and removal of oily/greasy particulate soils",
+      "Low streak/smear profile",
+      "Excellent rinsing properties",
+      "Stable when in contact with Acids, Alkali and Hydrogen Peroxide",
+      "Safe for wax and other surface treatments"
     ],
-		"packagingHandling": "TRITON is available in 5 liter, 10 liter, and 25 liter HDPE containers.  TRITON should be stored in high density polyethylene or fiberglass containers.",
+		"packagingHandling": "ELITE BOAT SOAP is available in 5 liter, 10 liter, and 25 liter HDPE containers.  ELITE BOAT SOAP should be stored in high density polyethylene or fiberglass containers.",
 		"useApplication": [
-			"Teak",
-			"Other Wood Surfaces"
+			"All painted surfaces",
+			"Ceramic",
+			"Gelcoat",
+			"Plastic",
+			"Fiberglass",
+			"Rubber",
+			"Polymer surfaces"
 		],
-		"suggestedDilutionDirections": "TRITON is provided ready to use and does not require dilution.\\nFor best results, clean and wash the surface with DC-100 Teak Clean and disinfect the surface with BIO CLEAR 2000.  Apply TRITON on the surface using a soft brush or sponge. Allow TRITON to cure for 10 hours.\\n  Avoid use on aluminum and stainless steel. If spilled or applied to these materials, rinse the surface with water and clean the surface with ELITE APC.",
+		"suggestedDilutionDirections": "Add 1 Oz of ELITE BOAT SOAP in 1 gallon of clean water (1:128).  Wash using a soft cloth, sheep skin mitt or soft brush.  Rinse with clean water.",
 		"environment": [
-			"MARPOL Annex III Compliant",
+			"MARPOL Annex V Compliant",
 			"NPDES Compliant",
 			"Excellent aquatic toxicity profile",
 			"Readily Biodegradable",
 			"No VOC's",
-			"Non-fuming",
-			"Non-corrosive to skin",
-			"Non-corrosive to mild steel"
+			"Phosphate and Nitrate Free",
+			"Contains no Propylene Glycol",
+			"Does not contain Glycol Ether"
 		],
-		"productSpecification": "Appearance : Clear liquid"
-
-  },
-  {
-    "name": "Bio+Clear+2000",
-    "title": "Bio Clear 2000",
-    "category": "teak",
-		"image": "images/products/bioclear2000B.png",
-		"largeImage": "images/products/bioclear2000A.png",
-		"sizes": [
-			{ "size": "gal", "price": 32000 },
-			{ "size": "liter", "price": 17500 }
-		],
-    "price": 25000,
-    "description": "BIO CLEAR 2000 is an Advanced EPA Registered Detergent/Disinfectant designed to provide effective cleaning, sanitation, disinfection and mold prevention.",
-    "costPerformance": [
-      "Exceptional performance",
-      "Low usage and cost effective",
-      "Not DOT regulated; offers lower transportation cost",
-      "Removes mold and mildew",
-      "Can be used for food sanitation",
-      "Can be used as cleaner, sanitizer, disinfectant, odor remover"
-    ],
-		"packagingHandling": "BIO CLEAR 2000 is available in 1 US Gallon HDPE containers. BIO CLEAR 2000 should be stored in high density polyethylene or fiberglass containers.",
-		"useApplication": [
-			"Ceramic",
-			"Glass",
-			"Plastic, Rubber, Silicon",
-			"Fiberglass",
-			"Polymer surfaces",
-			"Wood",
-			"Metal"
-		],
-		"suggestedDilutionDirections": "Disinfecting hard, non-porous surfaces: add 1 ounce per gallon of water. Apply solution with a mop, cloth, sponge, hand pump trigger sprayer or low pressure coarse sprayer so as to wet all surfaces thoroughly. Allow to remain wet for 10 minutes then remove excess liquid.\\nRead product label for complete description",
-		"environment": [
-			"Excellent aquatic toxicity profile",
-			"Readily Biodegradable",
-			"Phosphate Free",
-			"Does not contain phenols",
-			"Bleach Free",
-			"Non-corrosive",
-			"Non-corrosive to mild steel"
-		],
-		"productSpecification": "Appearance : Clear liquid\\t  Solubility : 100% in water\\t  PH : (as is) 9"
+		"productSpecification": "Appearance : Clear amber liquid   Solubility : 100% in water    PH : (as is) 11"
 
   }
 ]
