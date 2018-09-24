@@ -197,19 +197,19 @@ class ShopDetail extends connect(store)(PageViewElement) {
           <paper-tab>Environment</paper-tab>
           <paper-tab>Product Specifications</paper-tab>
         </paper-tabs>
-        <iron-pages attr-for-selected="name" selected="packagingHandling">
-          <div name="costPerformance">
+          <div hidden="${_attributeForSelected !== 'costPerformance'}">
             <ul>
               ${repeat(_item.costPerformance, item => html`
                 <li>${item}</li>
               `)}
             </ul>
           </div>
-          <div name="packagingHandling">
-            ${_item.packagingHandling}
+          <div hidden="${_attributeForSelected !== 'packagingHandling'}">
+            <p>
+              ${_item.packagingHandling}
+            </p>
           </div>
             
-        </iron-pages>
       </div>
     </div>
 
@@ -243,6 +243,9 @@ class ShopDetail extends connect(store)(PageViewElement) {
     this._failure = category && category.failure;
     this._price = this._item.price;
     this._attributeForSelected = state.app.attributeForSelected;
+    console.log(`
+      at _stateChanged(state) with _attributeForSelected = ${this._attributeForSelected}
+    `);
   }
 
   _unescapeText(text) {
@@ -253,9 +256,13 @@ class ShopDetail extends connect(store)(PageViewElement) {
     return elem.textContent;
   }
 
-  _setSelected() {
-    console.log(`at _setSelected with this._attributeForSelected --> ${this._attributeForSelected}`);
-    return this._attributeForSelected;
+  _noHide(attrValue) {
+    /*
+    if (this._attributeForSelected) {
+      return ( (this._attributeForSelected === attrValue ) ? "" : "hidden" );
+    }
+    */
+    return html``;
   }
   _addToCart() {
     store.dispatch(addToCart({
