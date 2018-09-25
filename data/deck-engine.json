@@ -1,0 +1,292 @@
+[
+  {
+    "name": "DC-100+BARNACLE+BLAST",
+    "title": "DC-100 BARNACLE BLAST",
+    "category": "deck-engine",
+		"image": "images/products/barnacleblastB.png",
+		"largeImage": "images/products/barnacleblastA.png",
+		"sizes": [
+			{ "size": "gal", "price": 15000 },
+			{ "size": "quart", "price": 7500 }
+		],
+    "price": 15000,
+    "description": "BARNACLE BLAST is safe and non-toxic. It is specifically formulated as a fast, effective and environmental alternative for removing marine growth and mineral deposits.",
+    "costPerformance": [
+      "BARNACLE  BLAST offers exceptional performance",
+      "3 times more effective than phosphoric acid",
+      "Not DOT regulated; offers lower transportation cost",
+      " Ideal to be used in concentrate or diluted",
+      "Not corrosive to skin and clothing"
+    ],
+		"packagingHandling": "DC-100 BARNACLE BLAST is available in 5 liter, 10 liter, and 25 liter HDPE containers.  DC-100 BARNACLE BLAST should be stored in high density polyethylene or fiberglass containers.",
+		"useApplication": [
+			"Paint",
+			"Fiberglass",
+			"Gelcoat",
+			"Plastic",
+			"Rubber"
+		],
+		"suggestedDilutionDirections": "DC-100 BARNACLE BLAST can be used in concentrated or diluted form, depending on the need for maintenance and cleaning. Dilute with clean water 1:1 to 20:1 depending on application purpose (128 to 24 ounces per gallon of water).  Apply DC-100 BARNACLE BLAST on surface to be cleaned. Allow it to affect the surface for 30 seconds to 5 minutes.  Brush the surface as necessary. Rinse with clean water.",
+		"environment": [
+			"MARPOL Annex V Compliant",
+			"NPDES Compliant",
+			"Excellent aquatic toxicity profile",
+			"Readily Biodegradable",
+			"No VOC's",
+			"Non-fuming",
+			"Phosphor and Bleach free",
+			"Non-corrosive to mild steel"
+		],
+		"productSpecification": "Appearance : Clear amber liquid    Solubility : 100% in water    PH : (as is) 1    PKa : 0.18     Activity : 60% (typical"
+  },
+  {
+    "name": "DC-100+DESCALER",
+    "title": "DC-100 DESCALER",
+    "category": "deck-engine",
+		"image": "images/products/descalerB.png",
+		"largeImage": "images/products/descalerA.png",
+		"sizes": [
+			{ "size": "gal", "price": 17000 },
+			{ "size": "quart", "price": 6500 }
+		],
+    "price": 17000,
+    "description": "DC-100 DESCALER & WATER SPOT REMOVER is the most effective descaler and water-spot remover on the market. While maintaining exceptional environmental properties, DC-100 DESCALER doesn't compromise performance.",
+    "costPerformance": [
+      "Removes water spots and scale effortlessly",
+      "3 times more effective than phosphoric acid",
+      "4-10 times more effective than citric and glycolic acid",
+      "Not DOT regulated; offers lower transportation cost",
+      "Ideal to be used in concentrate or diluted",
+      "Contains surfactants to enhance cleaning"
+    ],
+		"packagingHandling": "DC-100 DESCALER is available in 5 liter, 10 liter, and 25 liter packaging.  DC-100 Descaler should be stored in high density polyethylene or fiberglass containers.",
+		"useApplication": [
+			"Ceramic",
+			"Glass",
+			"Plastic",
+			"Fiberglass",
+			"Rubber",
+			"Paint"
+		],
+		"suggestedDilutionDirections": "DC-100 DESCALER can be used in concentrated or diluted form, depending on the need for maintenance and cleaning. Dilute with clean water (128 to 10 ounces per gallon of water).  For best results, apply DC-100 DESCALER on the surface to be cleaned. Allow it to affect the surface for 30 seconds to 5 minutes. Brush the surface if needed. Rinse with clean water. Rinse all metal surfaces with ELITE APC in order to neutralize the surface.",
+		"environment": [
+			"MARPOL Annex V Compliant",
+			"NPDES Compliant",
+			"Excellent aquatic toxicity profile",
+			"Readily Biodegradable",
+			"No VOC's",
+			"Non-fuming",
+			"Non-corrosive to skin",
+			"Non-corrosive to mild steel"
+		],
+		"productSpecification": "Appearance : Clear amber liquid     Solubility : 100% in water     PH : (as is) 0.7    PKa : 0.18    Activity : 60% (typical"
+  },
+	{
+    "name": "DC-100+RUST+REMOVER",
+    "title": "DC-100 RUST REMOVER",
+    "category": "deck-engine",
+		"image": "images/products/rustremoverB.png",
+		"largeImage": "images/products/rustremoverA.png",
+		"sizes": [
+			{ "size": "gal", "price": 18000 },
+			{ "size": "quart", "price": 7500 }
+		],
+    "price": 18000,
+    "description": "DC-100 RUST REMOVER is specially engineered for rust removal applications, where time, performance, environment and personal safety are equally important.",
+    "costPerformance": [
+      "Exceptional performance and cost",
+      "3 times more effective than phosphoric acid",
+      "4-10 times more effective than citric and glycolic acid",
+      "Contains surfactants to enhance cleaning",
+      "Not DOT regulated; offers lower transportation cost",
+      "Ideal to be used in concentrate or diluted",
+      "Contains anti-corrosion inhibitors for use around metal surfaces"
+    ],
+		"packagingHandling": "DC-100 RUST REMOVER is available in 5 liter, 10 liter, and 25 liter containers. DC-100 RUST REMOVER should be stored in high density polyethylene or fiberglass containers.",
+		"useApplication": [
+			"Removal of rust on all metal surfaces",
+			"DC-100 RUST  REMOVER is  corrosive to aluminum"
+		],
+		"suggestedDilutionDirections": "DC-100 RUST REMOVER can be used in concentrated or diluted form, depending on the need for maintenance and cleaning. Dilute with clean water 1:1 to 5:1 depending on application purpose (20 to128 ounces per gallon of water). For best results, apply DC-100 RUST REMOVER on the surface to be cleaned. Allow it to affect the surface for 30 seconds to 5 minutes. Brush the surface if needed. Rinse with clean water. Neutralize the surface  with ELITE APC.",
+		"environment": [
+			"MARPOL Annex V Compliant",
+			"NPDES Compliant",
+			"Excellent aquatic toxicity profile",
+			"Readily Biodegradable",
+			"No VOC's",
+			"Non-fuming",
+			"Non-corrosive to skin",
+			"Non-corrosive to mild steel"
+		],
+		"productSpecification": "Appearance : Clear amber liquid    Solubility : 100% in water    PH : (as is) 0.6    PKa : 0.18     Activity : 60% (typical)"
+  },
+ 	{
+    "name": "ELITE+APC+(All+Purpose+Cleaner)",
+    "title": "ELITE APC (All Purpose Cleaner)",
+    "category": "deck-engine",
+		"image": "images/products/apcB.png",
+		"largeImage": "images/products/apcA.png",
+		"sizes": [
+			{ "size": "gal", "price": 15000 },
+			{ "size": "quart", "price": 7500 }
+		],
+    "price": 15000,
+    "description": "ELITE APC is one of the most versatile and effective all-purpose cleaners available. It's non-toxic and biodegradable, without harmful bleach. The super concentrated formula empowers APC to clean just about anything.",
+    "costPerformance": [
+      "Concentrate formula offers high dilution ratio",
+      "Contains anti-corrosion inhibitors for application on metal",
+      "Contains mold prevention inhibitors",
+      "Replaces most other cleaners and detergents",
+      "Removes discoloring substances and has whitening properties<Paste>",
+      "Ability to clean areas where agitation is restricted",
+      "Superior penetration and removal of dirt",
+      "Low streak/smear profile",
+      "Excellent rinsing properties"
+    ],
+		"packagingHandling": "ELITE APC is available in 5 liter, 10 liter, and 25 liter HDPE containers.  ELITE APC should be Gstored in high density polyethylene or fiberglass containers.",
+		"useApplication": [
+			"Stainless steel and metal",
+			"Ceramic, Marble, Stone, Tile",
+			"Glass, Fiberglass",
+			"Gelcoat and painted surfaces",
+			"Plastic, Rubber, Vinyl",
+			"Fabric, Carpet"
+		],
+		"suggestedDilutionDirections": "ELITE APC is concentrated and should be used in diluted format.\n    Dilute ELITE APC with clean water in 25-1 to 2-1 (10-25 ounces per gallon of water), depending on condition of surface. Use more ELITE APC for extremely dirty surfaces.\n    Apply ELITE APC on the surface to be cleaned. Allow it to effect 30 seconds to 5 minutes. Rinse with clean water.",
+		"environment": [
+			"MARPOL Compliant",
+			"NPDES Compliant",
+			"Excellent aquatic toxicity profile",
+			"Readily Biodegradable",
+			"No VOC",
+			"Phosphate and Nitrate Free",
+			"Does Not contain Bleach",
+			"Glycol Ether, Ammonia"
+		],
+		"productSpecification": "Appearance : Clear amber liquid,  Solubility : 100% in water  PH : (as is) 11"
+  },
+	{
+    "name": "ELITE+NON-SKID+CLEAN",
+    "title": "ELITE NON-SKID CLEAN",
+    "category": "deck-engine",
+		"image": "images/products/blackstreakB.png",
+		"largeImage": "images/products/blackstreakA.png",
+		"sizes": [
+			{ "size": "gal", "price": 18000 },
+			{ "size": "32oz spray bottle", "price": 5500 }
+		],
+    "price": 18000,
+    "description": "ELITE NON-SKID CLEAN is specially formulated to remove stains, dirt and other foreign matter from all non-skid surfaces, painted or gelcoat.",
+    "costPerformance": [
+      "Advanced surfactant engineering provides exceptional cleaning",
+      "Contains no thickener offering superior solubility",
+      "Suitable for high temperature applications",
+      "Fast penetration and removal of oily/greasy particulate soils",
+      "Excellent rinsing properties",
+      "Stable when in contact with Acids, Alkali and Hydrogen Peroxide",
+      "Concentrate formula"
+    ],
+		"packagingHandling": "ELITE NON-SKID CLEAN is available in 5 liter, 10 liter, and 25 liter HDPE containers.  ELITE NON-SKID CLEAN should be stored in high density polyethylene or fiberglass containers.",
+		"useApplication": [
+			"Paint",
+			"Gelcoat",
+			"Fiberglass"
+		],
+		"suggestedDilutionDirections": "ELITE NON-SKID CLEAN should be used in diluted form depending on the need for maintenance and cleaning. Dilute with clean water 5:1 to 20:1 or as needed. (5 to 8 ounces per gallon of water)\n    \n    Apply ELITE NON-SKID CLEAN to the surface to be cleaned. Allow it to affect 10 seconds to 5 minutes depending on surface condition. Brush the surface. Rinse with clean water.",
+		"environment": [
+			"MARPOL Annex V Compliant",
+			"NPDES Compliant",
+			"Excellent aquatic toxicity profile",
+			"Readily Biodegradable",
+			"No VOC's",
+			"Phosphate and Nitrate Free",
+			"Contains no Propylene Glycol",
+			"Does not contain Formaldehyde"
+		],
+		"productSpecification": "Appearance : Clear amber liquid   Solubility : 100% in water    PH : (as is) 1"
+  },
+	{
+    "name": "ELITE+DEGREASER",
+    "title": "ELITE DEGREASER",
+    "category": "deck-engine",
+		"image": "images/products/degreaserB.png",
+		"largeImage": "images/products/degreaserA.png",
+		"sizes": [
+			{ "size": "gal", "price": 17000 },
+			{ "size": "quart", "price": 15500 }
+		],
+    "price": 17000,
+    "description": "ELITE DEGREASER is a high-efficiency, heavy duty dgreaser designed to provide efficient solutions for the most demanding tasks.",
+    "costPerformance": [
+      "The most effective degreaser on the market",
+      "For industrial and household applications",
+      "Removes fat, oil and grease effortlessly",
+      "Super concentrate formula offers high dilution ratio",
+      "Waste oils/insolubles rapidly break from used solution",
+      "Allows for easier oil and dirt separation",
+      "Contains metal anti-corrosion inhibitors",
+      "Superior penetrtion and removal of oil",
+      "Low streak/smear profile",
+      "Excellent rinsing properties"
+    ],
+		"packagingHandling": "ELITE DEGREASER is available in 5 liter, 10 liter, and 25 liter HDPE containers.  ELITE DEGREASER should be stored in high density polyethylene or fiberglass containers.",
+		"useApplication": [
+			"Metal, Fiberglass, Glass",
+			"Ceramic, Stone, Tile",
+			"Plastic, Rubber, Vinyl",
+			"Fabric, Carpet",
+			"Concrete, Brick"
+		],
+		"suggestedDilutionDirections": "ELITE DEGREASER is concentrated and should be used in diluted formate. \n    Dilute ELITE DEGREASER with clean water in 1-50:1 (8 to 25 ounces per gallon), depending on condition of the surface. Use more ELITE DEGREASER for extremely dirty surfaces. \n    Apply ELITE DEGREASER on the surface to be cleaned. Allow it to effect 30 seconds to 5 minutes. \n    Rinse with clean water.",
+		"environment": [
+			"MARPOL Compliant",
+			"NPDES Compliant",
+			"Excellent aquatic toxicity profile",
+			"Readily Biodegradable",
+			"No VOC's",
+			"Phosphate and Nitrate Free",
+			"Does not contain Bleach, Glycol Ether, Ammonia"
+		],
+		"productSpecification": "Appearance : Clear amber liquid   Solubility : 100% in water    PH : (as is) 0.12"
+  },
+	{
+    "name": "ELITE+POLICLEAN",
+    "title": "ELITE POLICLEAN",
+    "category": "deck-engine",
+		"image": "images/products/policleanB.png",
+		"largeImage": "images/products/policleanA.png",
+		"sizes": [
+			{ "size": "gal", "price": 15000 },
+			{ "size": "32oz spray bottle", "price": 3200 }
+		],
+    "price": 15000,
+    "description": "ELITE POLICLEAN is a nano-technology multi-surface cleaner and polish. It cleans without smearing or streaking and is safe for use on marble and stone counter tops.",
+    "costPerformance": [
+      "ELITE POLICLEAN offers exceptional performance and cost",
+      "Effective cleaner and polish without oily components",
+      "Contains superior cleaning technology",
+      "Leaves no streaking or smearing on surface",
+      "Safe for most surfaces"
+    ],
+		"packagingHandling": "ELITE POLICLEAN is available in 500ml, 1 liter, and 5 liter HDPE containers.  ELITE POLICLEAN should be stored in high density polyethylene or fiberglass containers.",
+		"useApplication": [
+			"Marble",
+			"Granite",
+			"Gelcoat",
+			"Wood Floors",
+			"Wood Doors",
+			"Wood Furniture"
+		],
+		"suggestedDilutionDirections": "ELITE POLICLEAN is provided ready to use and does not require dilution. \n    Spray ELITE POLICLEAN on the surface and clean the surface with microfiber or soft cloth.\n    Rinsing is not required.",
+		"environment": [
+			"MARPOL Annex V Compliant",
+			"NPDES Compliant",
+			"Excellent aquatic toxicity profile",
+			"Readily Biodegradable",
+			"Water-based",
+			"Contains No Solvents",
+			"Phosphate and Nitrate Free"
+		],
+		"productSpecification": "Appearance : White liquid    Solubility : 100% in water    PH : (as is) 7.5"
+  }
+]

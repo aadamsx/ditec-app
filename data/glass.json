@@ -1,96 +1,55 @@
 [
   {
-    "name": "Teak+Clean",
-    "title": "Teak Clean",
-    "category": "teak",
-		"image": "images/products/teakcleanB.png",
-		"largeImage": "images/products/teakcleanA.png",
+    "name": "ELITE+GLAXON",
+    "title": "ELITE GLAXON",
+    "category": "glass",
+		"image": "images/products/glaxonB.png",
+		"largeImage": "images/products/glaxonA.png",
 		"sizes": [
-			{ "size": "gal", "price": 25000 },
 			{ "size": "liter", "price": 17500 }
 		],
-    "price": 25000,
-    "description": "DC-100 TEAK CLEAN is specially engineered for cleaning teak and other wood surfaces. It safely cleans and restores teak decks to their natural color. TEAK CLEAN combines superior cleaning performance with exceptional environmental properties.",
+    "price": 17500,
+    "description": "ELITE GLAXON is a 100% bio-based glass and multi-surface cleaner, specially formulated to deliver the best clarity and shine against tough dirt and grime. GLAXON was developed using cutting-edge technology and cleans rapidly and easily providing a streak-free shine on most hard surfaces.",
     "costPerformance": [
-      "1 step application saves time",
-      "TEAK CLEAN offers exceptional performance and cost efficiency",
-      "3 times more effective than phosphoric acid",
-      "4 to10 times more effective than citric and glycolic acid",
-      "Safe for gelcoat and painted surfaces",
-      "Not DOT regulated; offers lower transportation cost",
-      "Ideal to be used in concentrate or diluted",
-      "Contains anti-corrosion inhibitors for use around metal surfaces"
+      "Exceptionally effective glass and multi-surface cleaner",
+      "Replaces all other glass cleaners and detergents",
+      "Suitable for high temperature applications",
+      "Ability to clean areas where agitation is restricted",
+      "Superior penetration and removal of dirt",
+      "Streak/smear free profile",
+      "Excellent for use on high gloss surfaces",
+      "Contains No Alcohol, Ammonia, Fragrances or Dye",
+      "Completely odor free"
     ],
-		"packagingHandling": "DC-100 TEAK CLEAN is available in 5 liter, 10 liter, and 25 liter HDPE containers. DC-100 TEAK CLEAN should be stored in high density polyethylene or fiberglass containers.",
+		"packagingHandling": "ELITE GLAXON is available in 5 liter, 10 liter, and 25 liter HDPE containers. ELITE GLAXON should be stored in high density polyethylene or fiberglass containers.",
 		"useApplication": [
-			"Teak Deaks",
-			"Teak Furniture",
-			"Wood Furniture",
-			"All Wood Surfaces"
+			"Ceramic, Paint",
+			"Glass, Plastic, Fiberglass",
+			"lossy surfaces",
+			"All other hard or semi-hard surfaces"
 		],
-		"suggestedDilutionDirections": "DC-100 TEAK CLEANER can be used in concentrated or diluted form, depending on the need for maintenance and cleaning. Dilute with clean water 1:1 to 5:1 or as needed (128 to 20 ounces per gallon of water).  For best results, Apply DC-100 TEAK CLEAN on the surface to be cleaned. Allow it to affect the surface for 30 seconds to 5 minutes. Brush the surface in the same direction as the teak grain. Rinse with clean water. After cleaning, preserve the surface with Bio Clear 2000 and Triton Sealer.",
+		"suggestedDilutionDirections": "ELITE GLAXON  is provided ready to use and does not require dilution. \n    Spray ELITE GLAXON on a microfiber cloth and clean the surface. ELITE GLAXON can directly be sprayed on the surface as well. Rinsing is not required.",
 		"environment": [
 			"MARPOL Annex V Compliant",
 			"NPDES Compliant",
 			"Excellent aquatic toxicity profile",
 			"Readily Biodegradable",
-			"No VOC's",
-			"Non-fuming",
-			"Non-corrosive to skin",
-			"Non-corrosive to mild steel"
+			"Completely safe for ecosystem"
 		],
-		"productSpecification": "Appearance : Clear amber liquid,  Solubility : 100% in water  PH : (as is) 0.18 Activity : 60% (typical)"
-
-  },
-  {
-    "name": "Triton",
-    "title": "Triton",
-    "category": "teak",
-		"image": "images/products/tritonB.png",
-		"largeImage": "images/products/tritonA.png",
-		"sizes": [
-			{ "size": "gal", "price": 17000 },
-			{ "size": "liter", "price": 7500 }
-		],
-    "price": 25000,
-    "description": "TRITON is a nano-technology based coating designed for application on teak and other wood surfaces. Triton binds to the wood fiber and creates a protective and highly water repellent surface, and does not change the appearance, color or feeling of the surface.",
-    "costPerformance": [
-      "Triton offers exceptional performance and cost advantages",
-      "The most effective teak treatment available",
-      "Contains superior technology for the marine environment",
-      "1 step application",
-      "Significantly reduces wood surface maintenance"
-    ],
-		"packagingHandling": "TRITON is available in 5 liter, 10 liter, and 25 liter HDPE containers.  TRITON should be stored in high density polyethylene or fiberglass containers.",
-		"useApplication": [
-			"Teak",
-			"Other Wood Surfaces"
-		],
-		"suggestedDilutionDirections": "TRITON is provided ready to use and does not require dilution.\\nFor best results, clean and wash the surface with DC-100 Teak Clean and disinfect the surface with BIO CLEAR 2000.  Apply TRITON on the surface using a soft brush or sponge. Allow TRITON to cure for 10 hours.\\n  Avoid use on aluminum and stainless steel. If spilled or applied to these materials, rinse the surface with water and clean the surface with ELITE APC.",
-		"environment": [
-			"MARPOL Annex III Compliant",
-			"NPDES Compliant",
-			"Excellent aquatic toxicity profile",
-			"Readily Biodegradable",
-			"No VOC's",
-			"Non-fuming",
-			"Non-corrosive to skin",
-			"Non-corrosive to mild steel"
-		],
-		"productSpecification": "Appearance : Clear liquid"
+		"productSpecification": "Appearance : Clear liquid\\t  Solubility : 100% in water\\t PH : (as is) 7"
 
   },
   {
     "name": "Bio+Clear+2000",
     "title": "Bio Clear 2000",
-    "category": "teak",
+    "category": "glass",
 		"image": "images/products/bioclear2000B.png",
 		"largeImage": "images/products/bioclear2000A.png",
 		"sizes": [
 			{ "size": "gal", "price": 32000 },
 			{ "size": "liter", "price": 17500 }
 		],
-    "price": 25000,
+    "price": 320000,
     "description": "BIO CLEAR 2000 is an Advanced EPA Registered Detergent/Disinfectant designed to provide effective cleaning, sanitation, disinfection and mold prevention.",
     "costPerformance": [
       "Exceptional performance",
