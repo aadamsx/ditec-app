@@ -88,6 +88,7 @@ class DitecApp extends connect(store)(LitElement) {
         font-size: 18px;
         background-color: var(--app-header-background-color);
         padding-top: 1em;
+        justify-content: center;
       }
 
       [main-title] {

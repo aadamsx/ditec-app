@@ -18,14 +18,15 @@ import {
   OPEN_SNACKBAR,
   CLOSE_SNACKBAR,
   UPDATE_DRAWER_STATE,
-  UPDATE_ATTRIBUTE_FOR_SELECTED
+  UPDATE_ATTRIBUTE_FOR_SELECTED,
+  SET_SERVICES_MODAL_ID
 } from '../actions/app.js';
 
 import { ADD_TO_CART } from '../actions/cart.js';
 import { currentCategorySelector, currentItemSelector } from './categories.js';
 import { createSelector } from 'reselect';
 
-const app = (state = {drawerOpened: false, optionsChanged: false, attributeForSelected: "costPerformance"}, action) => {
+const app = (state = {drawerOpened: false, optionsChanged: false, attributeForSelected: "costPerformance", servicesModalId: ""}, action) => {
   switch (action.type) {
     case UPDATE_LOCATION:
       return {
@@ -68,6 +69,11 @@ const app = (state = {drawerOpened: false, optionsChanged: false, attributeForSe
       return {
         ...state,
         attributeForSelected: action.attributeForSelected
+      }
+    case SET_SERVICES_MODAL_ID:
+      return {
+        ...state,
+        servicesModalId: action.id
       }
     case UPDATE_NETWORK_STATUS:
       return {
