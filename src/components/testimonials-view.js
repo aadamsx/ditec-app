@@ -24,6 +24,10 @@ class TestimonialsView extends PageViewElement {
       ${SharedStyles}
       <style>
         
+        div#_viewport {
+          position: relative;
+        }
+
         div#hero {
           background: url(../images/testimonials-bkg.jpg) no-repeat center center fixed;
           -webkit-background-size: cover;
@@ -37,7 +41,7 @@ class TestimonialsView extends PageViewElement {
           overflow: hidden;
           min-width: 100vw;
           min-height: 100vh;
-          position: fixed;
+          position: absolute;
           width: 100%;
           height: 100%;
         }
@@ -50,10 +54,11 @@ class TestimonialsView extends PageViewElement {
 
         div#overlay {
           position: absolute;
-          top: -10px;
+          top: 0px;
           bottom: -10px;
           left: -10px;
           right: -10px;
+          height: 100vh;
           background: rgba(0,0,0,0.5);
           z-index: -3;
         }
@@ -79,7 +84,7 @@ class TestimonialsView extends PageViewElement {
           padding-left: 20px;
         }
 
-        div#previous-container > button {
+        div#previous-container  button {
           float: right;
         }
 
@@ -97,28 +102,30 @@ class TestimonialsView extends PageViewElement {
 
       </style>
 
-      <div id="hero"></div>
-      <div id="overlay"></div>
-      <div id="container">
-        <div id="previous-container">
-          <paper-button-light on-click="${()=>this._previous()}">
-            <button title="previous">
-              <img src="../images/previous.svg" alt="<" />
-            </button>
-          </paper-button-light>
-        </div>
-        <iron-pages id="carousel" selected="0">
-          <div>Page 0</div>
-          <div>Page 1</div>
-          <div>Page 2</div>
-          <div>Page 3</div>
-        </iron-pages>
-        <div id="next-container">
-          <paper-button-light on-click="${()=>this._next()}">
-            <button title="next">
-              <img src="../images/next.svg" alt=">" />
-            </button>
-          </paper-button-light>
+      <div id="_viewport">
+        <div id="hero"></div>
+        <div id="overlay"></div>
+        <div id="container">
+          <div id="previous-container">
+            <paper-button-light on-click="${()=>this._previous()}">
+              <button title="previous">
+                <img src="../images/previous.svg" alt="<" />
+              </button>
+            </paper-button-light>
+          </div>
+          <iron-pages id="carousel" selected="0">
+            <div>Page 0</div>
+            <div>Page 1</div>
+            <div>Page 2</div>
+            <div>Page 3</div>
+          </iron-pages>
+          <div id="next-container">
+            <paper-button-light on-click="${()=>this._next()}">
+              <button title="next">
+                <img src="../images/next.svg" alt=">" />
+              </button>
+            </paper-button-light>
+          </div>
         </div>
       </div>
 
