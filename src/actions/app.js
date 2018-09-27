@@ -21,7 +21,6 @@ export const UPDATE_DRAWER_STATE = 'UPDATE_DRAWER_STATE';
 export const OPEN_SNACKBAR = 'OPEN_SNACKBAR';
 export const CLOSE_SNACKBAR = 'CLOSE_SNACKBAR';
 export const UPDATE_ATTRIBUTE_FOR_SELECTED = 'UPDATE_ATTRIBUTE_FOR_SELECTED';
-export const SET_SERVICES_MODAL_ID = 'SET_SERVICES_MODAL_ID';
 
 export const reloadCategory = () => async (dispatch, getState) => {
   let state = getState();
@@ -180,12 +179,6 @@ export const updateAttributeForSelected = (attr) => (dispatch) => {
   });
 }
 
-export const setServicesModalId = (id) => (dispatch) => {
-  dispatch({
-    type: SET_SERVICES_MODAL_ID,
-    id
-  });
-}
 
 let snackbarTimer = 0;
 

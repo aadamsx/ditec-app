@@ -14,14 +14,13 @@ import { PageViewElement } from './page-view-element.js';
 
 import '@polymer/paper-card/paper-card.js';
 import '@polymer/paper-button/paper-button.js';
+import '@polymer/paper-dialog/paper-dialog.js';
 
-import { store } from '../store.js';
-import { connect } from 'pwa-helpers/connect-mixin.js';
-import { setServicesModalId } from '../actions/app.js';
 
-class ServicesView extends connect(store)(PageViewElement) {
+class ServicesView extends PageViewElement {
+  
   _render() {
-    const { _servicesModalId } = this;
+
     return html`
       ${SharedStyles}
       <style>
@@ -81,7 +80,7 @@ class ServicesView extends connect(store)(PageViewElement) {
             Our Express service includes a complete wash and chamois hand dry of all exterior surfaces followed by an application of wax/cleaner wax using a variable speed power buffer on exterior fiberglass. 
           </div>
           <div class="card-actions">
-            <paper-button raised on-click="${_=>store.dispatch(setServicesModalId('detail'))}">More</paper-button>
+            <paper-button raised on-click="${()=>this._openDetail()}">More</paper-button>
           </div>
         </paper-card>
         <paper-card heading="Emmental" image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
@@ -103,33 +102,34 @@ class ServicesView extends connect(store)(PageViewElement) {
         </paper-card>
 
         <!-- define card dialogs -->
+        <paper-dialog id="detail" modal>
+          <p>Our Express service includes a complete wash and chamois hand dry of all exterior surfaces followed by an application of wax/cleaner wax using a variable speed power buffer on exterior fiberglass.<br /><br /> Premium Service Detailing - Our Premium Service Detailing includes a complete wash and chamois hand dry of all exterior surfaces including vinyl, metal, non-skid, and windows followed by an application of wax/cleaner wax using a high speed power buffer on all fiberglass PLUS non-skid deck treatment, compartment cleaning, helm cleaning/waxing, UV vinyl treatment, metal shine dressing and rub rail restorer.
+          </p>
+          <div class="buttons">
+            <paper-button dialog-confirm autofocus>Tap me to close</paper-button>
+          </div>
+        </paper-dialog>
 
-        <div class$="${this._hide(this._servicesModalId !== 'detail')}" >
-          <h2>detail content goes here...</hw>
-        </div>
-        <div class$="${this._hide(this._servicesModalId !== 'paint')}" >
-          <h2>paint content goes here...</hw>
-        </div>
       </div>
    
     `;
   }
 
-  static get properties() { return {
-    _servicesModalId: {type: String}
-  }}
 
-  _stateChanged(state) {
-    this._servicesModalId = state.app.servicesModalId;
+  _openDetail() {
+    const detailDialog = this.shadowRoot.querySelector('#detail');
+    detailDialog.open();
   }
+
+  _openPaint() {
+    const paintDialog = this.shadowRoot.querySelector('#paint');
+    paintDialog.open();
+  }
+
+
+
 
   
-  _hide(yes) {
-    if ( yes ) {
-      return "hide";
-    }
-    return ""
-  }
 
 }
 
