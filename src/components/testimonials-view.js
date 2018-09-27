@@ -68,7 +68,19 @@ class TestimonialsView extends PageViewElement {
         }
 
         iron-pages > div {
-          background-color: white;
+          padding: 2em 3em;
+          background-color: rgba(255,255,255,0.8);
+          background-image: url(../images/quotes.svg);
+          background-repeat: no-repeat;
+          background-position: top 2em center;
+          min-height: 50vh;
+          border-top-right-radius: 40px;
+          border-bottom-left-radius: 40px;
+        }
+
+        iron-pages  p {
+          margin-top: 5em;
+          font-size: 1.5em;
         }
 
         div#previous-container {
@@ -114,10 +126,21 @@ class TestimonialsView extends PageViewElement {
             </paper-button-light>
           </div>
           <iron-pages id="carousel" selected="0">
-            <div>Page 0</div>
-            <div>Page 1</div>
-            <div>Page 2</div>
-            <div>Page 3</div>
+            <div>
+              <p>
+                I wanted to reach out to and let you know how pleased I am with your team’s work on my Chaparral Signature 290 cruiser. The boat is a 2006 model; however, the gel-coat looks as good if not better than new thanks to your recent detail work. Your team spent a lot of time and put in the necessary effort to make her shine. I have had a similar detail done at a marina but am pleased to say your work is better. I noticed your team member looking very closely at all the “nooks and crannies” to make sure nothing was overlooked. Your team also washed everything down upon completion, including my dock. It’s nice to do business with a reputable company.<br />Robert Wainland, P.A.<br />Senior Investment Advisor
+              </p>
+            </div>
+            <div>
+              <p>
+                I would highly recommend Debbie's Boat Cleaning Services to anyone in the Fort Lauderdale area in need of such services. I had a severe problem with my 47' sailing catamaran docked in Fort Lauderdale and on the market for sale. I thought the listing sales agent was checking on the boat on a regularly basis, as I live several thousand miles away, but he wasn't and as a result the interior of the boat became mildew and mold infested due excessive moisture and lack of attention.<br />I found Debbie/s Boat Cleaning with a Google search on Feb 17, 2016 and talked to her (Debbie) that day. She immediately went to the boat and assessed the situation and confirmed with pictures the mold and mildew situation. Within 24 hours she gave an estimate for her services, which was very competitive with other boat cleaning services I had contacted. I decided to use her services and she had people on the boat cleaning within a few days. Ten days after I agreed to use her services, the boat was clean and ready to be shown to potential buyers again. I'm sure anyone who reads this letter, Debbie can share the before and after pictures of the tremendous job she and her crew did in such a short period of time. I cannot thank Debbie enough for her professionalism in dealing with matter on a timely and completive basis.<br />CJ "Chuck" Abrams<br />Silverthorne, CO
+              </p>
+            </div>
+            <div>
+              <p>
+                I would highly recommend Debbie's Boat Cleaning Services to anyone in the Fort Lauderdale area in need of such services. I had a severe problem with my 47' sailing catamaran docked in Fort Lauderdale and on the market for sale. I thought the listing sales agent was checking on the boat on a regularly basis, as I live several thousand miles away, but he wasn't and as a result the interior of the boat became mildew and mold infested due excessive moisture and lack of attention.<br />I found Debbie/s Boat Cleaning with a Google search on Feb 17, 2016 and talked to her (Debbie) that day. She immediately went to the boat and assessed the situation and confirmed with pictures the mold and mildew situation. Within 24 hours she gave an estimate for her services, which was very competitive with other boat cleaning services I had contacted. I decided to use her services and she had people on the boat cleaning within a few days. Ten days after I agreed to use her services, the boat was clean and ready to be shown to potential buyers again. I'm sure anyone who reads this letter, Debbie can share the before and after pictures of the tremendous job she and her crew did in such a short period of time. I cannot thank Debbie enough for her professionalism in dealing with matter on a timely and completive basis.<br />CJ "Chuck" Abrams<br />Silverthorne, CO
+              </p>
+            </div>
           </iron-pages>
           <div id="next-container">
             <paper-button-light on-click="${()=>this._next()}">
