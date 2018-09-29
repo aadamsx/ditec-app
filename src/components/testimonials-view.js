@@ -24,43 +24,28 @@ class TestimonialsView extends PageViewElement {
       ${SharedStyles}
       <style>
         
-        div#_viewport {
-          position: relative;
-        }
-
-        div#hero {
-          background: url(../images/testimonials-bkg.jpg) no-repeat center center fixed;
+        div#container {
+          min-height: 100vh;
+          background: linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            ),
+            url(../images/testimonials-bkg.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
           background-size: cover;
-          z-index: -5;
-        }
-
-        div#hero, div#container {
-          overflow: hidden;
-          min-width: 100vw;
-          min-height: 100vh;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-        }
-
-        div#container {
+          /* create a flex layout context */
+          display: -webkit-box;
+          display: -moz-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
           display: flex;
+
           justify-content: center;
           align-items: center;
-        }
-
-        div#overlay {
-          position: absolute;
-          top: 0px;
-          bottom: -10px;
-          left: -10px;
-          right: -10px;
-          height: 100vh;
-          background: rgba(0,0,0,0.5);
-          z-index: -3;
         }
 
         iron-pages {
@@ -69,7 +54,7 @@ class TestimonialsView extends PageViewElement {
 
         iron-pages > div {
           padding: 2em 3em;
-          background-color: rgba(255,255,255,0.8);
+          background-color: rgba(255,255,255,0.85);
           background-image: url(../images/quotes.svg);
           background-repeat: no-repeat;
           background-position: top 2em center;
@@ -114,12 +99,9 @@ class TestimonialsView extends PageViewElement {
 
       </style>
 
-      <div id="_viewport">
-        <div id="hero"></div>
-        <div id="overlay"></div>
-        <div id="container">
-          <div id="previous-container">
-            <paper-button-light on-click="${()=>this._previous()}">
+      <div id="container">
+        <div id="previous-container">
+            <paper-button-light on-click="${()=>this.shadowRoot.querySelector('#carousel').selectPrevious()}">
               <button title="previous">
                 <img src="../images/previous.svg" alt="<" />
               </button>
@@ -149,7 +131,6 @@ class TestimonialsView extends PageViewElement {
               </button>
             </paper-button-light>
           </div>
-        </div>
       </div>
 
 

@@ -30,9 +30,8 @@ import { currentCategorySelector } from '../reducers/categories.js';
 import { metaSelector } from '../reducers/app.js';
 import { updateLocation, updateNetworkStatus, updateDrawerState } from '../actions/app.js';
 
-import '@polymer/iron-image/iron-image.js';
-import '@polymer/iron-icons/iron-icons.js';
 import '@polymer/paper-icon-button/paper-icon-button.js';
+import '@polymer/iron-icons/iron-icons.js';
 import '@polymer/paper-item/paper-item.js';
 import '@polymer/paper-listbox/paper-listbox.js';
 import '@polymer/paper-menu-button/paper-menu-button.js';

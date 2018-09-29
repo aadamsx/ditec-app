@@ -25,53 +25,19 @@ class ServicesView extends PageViewElement {
       ${SharedStyles}
       <style>
 
-        div#_viewport {
-          position: relative;
-        }
-
-        div#hero {
-          background: url(../images/services-bkg.jpg) no-repeat center center fixed;
+        div#container {
+          min-height: 100vh;
+          background: linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            ),
+            url(../images/services-bkg.jpg);
+          background-repeat: no-repeat;
+          background-attachment: fixed;
           -webkit-background-size: cover;
           -moz-background-size: cover;
           -o-background-size: cover;
           background-size: cover;
-          z-index: -5;
-        }
-
-        div#hero, div#container {
-          overflow: hidden;
-          min-width: 100vw;
-          min-height: 100vh;
-          position: absolute;
-          width: 100%;
-          height: 100%;
-        }
-
-        div#container {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-
-        div#overlay {
-          position: absolute;
-          top: 0px;
-          bottom: -10px;
-          left: -10px;
-          right: -10px;
-          height: 100vh;
-          background: rgba(0,0,0,0.5);
-          z-index: -3;
-        }
-
-        h1 {
-          color: white;
-          font-size: 4vw;
-          line-height: 90%;
-          padding: 7vw;
-        }
-
-        .flex-container {
           padding: 0;
           margin: 0;
           list-style: none;
@@ -89,6 +55,14 @@ class ServicesView extends PageViewElement {
 
           /* define space is distributed around children */
           justify-content: space-around;
+          align-items: center;
+        }
+
+        h1 {
+          color: white;
+          font-size: 4vw;
+          line-height: 90%;
+          padding: 7vw;
         }
 
         paper-card {
@@ -102,10 +76,7 @@ class ServicesView extends PageViewElement {
 
       </style>
 
-      <div id="_viewport">
-        <div id="hero"></div>
-        <div id="overlay"></div>
-        <div class="flex-container">
+        <div id="container">
           <paper-card  heading="Detail" image="http://placehold.it/350x150/FFC107/000000" alt="Emmental">
             <div class="card-content">
               Our Express service includes a complete wash and chamois hand dry of all exterior surfaces followed by an application of wax/cleaner wax using a variable speed power buffer on exterior fiberglass. 
@@ -141,7 +112,6 @@ class ServicesView extends PageViewElement {
             </div>
           </paper-dialog>
 
-        </div>
       </div>
    
     `;
